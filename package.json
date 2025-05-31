@@ -1,8 +1,8 @@
 {
   "name": "react-crt-filter",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A simple CRT filter React component",
-  "main": "/src/index.js",
+  "main": "/src/index.jsx",
   "type": "module",
   "scripts": {
     "start": "react-scripts start",
