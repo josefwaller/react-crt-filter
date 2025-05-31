@@ -1,0 +1,35 @@
+{
+  "name": "react-crt",
+  "version": "1.0.0",
+  "description": "A simple CRT filter React component",
+  "main": "/src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josef Waller",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "style-loader": "^4.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "css-loader": "^7.1.2",
+    "from": "^0.1.7",
+    "local": "^0.3.3"
+  }
+}

@@ -1,0 +1,80 @@
+@keyframes scanlinesAnim {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+.crtFilterRoot {
+  position: relative;
+
+  .grid,
+  .backlight,
+  .scanlines,
+  .filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .grid {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.05) 10%,
+        rgba(0, 0, 0, 0) 10%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.3) 00%,
+        rgba(255, 0, 0, 0.3) 32%,
+        rgba(0, 255, 0, 0.3) 33%,
+        rgba(0, 255, 0, 0.3) 66%,
+        rgba(0, 0, 255, 0.3) 66%,
+        rgba(0, 0, 255, 0.3) 99%,
+        rgba(255, 0, 0, 0.3) 100%
+      );
+    mix-blend-mode: multiply;
+    background-size: 3px 3px;
+  }
+  .backlight {
+    // z-index: 2;
+    background: radial-gradient(
+      circle closest-side,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%,
+      rgba(0, 0, 0, 0.1) 120%
+    );
+    mix-blend-mode: multiply;
+
+    z-index: 10;
+    view-transition-name: crtFilters;
+  }
+  .content {
+    pointer-events: inherit;
+  }
+
+  .filter {
+    overflow: hidden;
+  }
+
+  .scanlines {
+    height: 200%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.05) 50%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
+    animation: scanlinesAnim 0.0128s infinite;
+    animation-timing-function: linear;
+  }
+}
+
+::view-transition-group(crtFilters) {
+  z-index: 100;
+}
