@@ -1,5 +1,5 @@
 {
-  "name": "react-crt",
+  "name": "react-crt-filter",
   "version": "1.0.0",
   "description": "A simple CRT filter React component",
   "main": "/src/index.js",
@@ -31,5 +31,9 @@
     "css-loader": "^7.1.2",
     "from": "^0.1.7",
     "local": "^0.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:josefwaller/react-crt-filter"
   }
 }
