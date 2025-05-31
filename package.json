@@ -1,8 +1,9 @@
 {
   "name": "react-crt-filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple CRT filter React component",
   "main": "/src/index.js",
+  "type": "module",
   "scripts": {
     "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1"
