@@ -1,6 +1,6 @@
 {
   "name": "react-crt-filter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple CRT filter React component",
   "main": "/src/index.jsx",
   "type": "module",
